@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn --poll ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
     "serv": "docker logs fin_api -f --since 10m",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
