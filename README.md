@@ -22,7 +22,9 @@ A rota recebe <code style="color:red">name</code>, <code style="color:red">email
 
 A rota recebe <code style="color:red">email</code> e <code style="color:red">password</code> no corpo da requisição e retorna os dados do usuário autenticado junto à um token JWT.
 
-**_testes criados para essa rota_**<br>
+**_testes criados para essa rota_**<br
+
+
 - [x] _should be able to authentica an user_ <br>
 - [x] _should not be able to authenticate a non existent user_ <br>
 - [x] _should not be able to authenticate with incorrect password_ <br>
@@ -73,4 +75,36 @@ A rota recebe um token JWT pelo header e o id de uma operação registrada (saqu
 - [x] _should not be able to get statement operation with invalid statement id_ <br>
 
 
+## Tecnologias utilizadas
 
+* NodeJS/TypeScript
+* Express.js
+* Docker
+* TypeORM
+* JWT (tokens)
+* Bcrypt (criptografia para senhas)
+
+
+
+
+## Instalação
+Essa aplicação funciona em nodeJS
+
+1. Clonar repositório
+
+```sh
+    $ git clone https://github.com/lfml83/FinAPI-unitaryTests.git
+```
+
+2. Instalar as depêndencias
+
+```sh
+    yarn
+```
+
+3. Rodar todos os testes
+
+
+```sh
+    yarn test
+```
