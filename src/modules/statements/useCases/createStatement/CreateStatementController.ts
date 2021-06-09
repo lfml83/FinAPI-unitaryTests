@@ -9,6 +9,7 @@ enum OperationType {
 }
 
 export class CreateStatementController {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   async execute(request: Request, response: Response) {
     const { id: user_id } = request.user;
     const { amount, description } = request.body;

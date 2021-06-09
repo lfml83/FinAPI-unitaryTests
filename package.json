@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn --poll ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
     "serv": "docker logs fin_api -f --since 10m",
-    "test": "jest --verbose"
+    "test": "SET NODE_ENV=test&&jest --verbose --detectOpenHandles"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -20,7 +20,8 @@
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.5.0",
     "typeorm": "^0.2.31",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "supertest": "^6.1.3"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -29,6 +30,7 @@
     "@types/jest": "^26.0.23",
     "@types/jsonwebtoken": "^8.5.1",
     "@types/node": "^14.14.35",
+    "@types/supertest": "^2.0.11",
     "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
