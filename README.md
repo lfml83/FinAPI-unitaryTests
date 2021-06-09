@@ -129,19 +129,24 @@ Essa aplicação funciona em nodeJS
     yarn
 ```
 
-3. Rodar as migrations
+3. Iniciar o docker
+
+```sh
+    docker-compose up
+```
+
+4. Rodar as migrations
 
 ```sh
     yarn typeorm migration:run
 ```
-4. Criar também a database fin_api_test para rodar os testes de integração no postgres
+5. Criar também a database fin_api_test para rodar os testes de integração no postgres
 
 ```sh
     create database fin_api_test
 ```
 
-3. Rodar todos os testes
-
+6. Rodar todos os testes
 
 ```sh
     yarn test
