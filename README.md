@@ -112,8 +112,6 @@ A rota recebe um token JWT pelo header e o id de uma operação registrada (saqu
 * Bcrypt (criptografia para senhas)
 
 
-
-
 ## Instalação
 Essa aplicação funciona em nodeJS
 
