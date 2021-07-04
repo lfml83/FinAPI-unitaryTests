@@ -16,7 +16,7 @@ export class GetStatementOperationController {
       user_id,
       statement_id,
     });
-
+    // declarar
     return response.json(statementOperation);
   }
 }
